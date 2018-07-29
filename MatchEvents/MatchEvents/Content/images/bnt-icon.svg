@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="20px" viewBox="0 0 26 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>185A576D-86A4-4CBC-9A34-23C555747037</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="m_00_eventbrite" transform="translate(-269.000000, -497.000000)" fill="#FFFFFF">
+            <g id="app" transform="translate(153.000000, 457.000000)">
+                <g id="Group" transform="translate(101.000000, 25.000000)">
+                    <g id="Group-2" transform="translate(15.000000, 6.000000)">
+                        <path d="M15,21 C16.66,21 17.99,19.66 17.99,18 C17.99,16.34 16.66,15 15,15 C13.34,15 12,16.34 12,18 C12,19.66 13.34,21 15,21 Z M7,21 C8.66,21 9.99,19.66 9.99,18 C9.99,16.34 8.66,15 7,15 C5.34,15 4,16.34 4,18 C4,19.66 5.34,21 7,21 Z M7,23 C4.67,23 0,24.17 0,26.5 L0,29 L14,29 L14,26.5 C14,24.17 9.33,23 7,23 Z M15,23 C14.71,23 14.38,23.02 14.03,23.05 C15.19,23.89 16,25.02 16,26.5 L16,29 L22,29 L22,26.5 C22,24.17 17.33,23 15,23 Z" id="Shape" fill-rule="nonzero"></path>
+                        <text id="+" font-family="Ubuntu-Bold, Ubuntu" font-size="16" font-weight="bold">
+                            <tspan x="17.912" y="19">+</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
