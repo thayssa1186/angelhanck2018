@@ -11,7 +11,7 @@ namespace MatchEvents.Models
     {
         [Key]
         [Column(Order = 0)]
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int id { get; set; }
 
         [Key]
@@ -19,8 +19,7 @@ namespace MatchEvents.Models
         [StringLength(255)]
         public string Nome { get; set; }
 
-        [Key]
-        [Column(Order = 2)]
-        public DateTime DataCriacao { get; set; }
+        [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
+        public DateTime? DataCriacao { get; set; }
     }
 }
