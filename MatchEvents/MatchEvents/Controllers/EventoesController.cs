@@ -66,12 +66,24 @@ namespace MatchEvents.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Evento evento = await db.Eventoes.FindAsync(id);
+            Evento evento = await db.Eventoes.FindAsync(id);            
+
             if (evento == null)
             {
                 return HttpNotFound();
             }
-            return View(evento);
+
+            var user = (Usuario)Session["User"];
+            var histEvento = new HistEvento();
+            histEvento.DataCriacao = DateTime.Now;
+            histEvento.idEvento = evento.id;
+            histEvento.IdUser = user.id;
+            histEvento.Status = 1;
+
+            db.HistEventoes.Add(histEvento);
+            await db.SaveChangesAsync();
+
+            return RedirectToAction("Index","HistMatches");
         }
 
         // POST: Eventoes/Edit/5

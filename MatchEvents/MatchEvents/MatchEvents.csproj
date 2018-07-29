@@ -171,6 +171,7 @@
     <Compile Include="Models\Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModel\LoginViewsModel.cs" />
+    <Compile Include="ViewModel\MatchViewsModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
@@ -211,10 +212,6 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Eventoes\Create.cshtml" />
-    <Content Include="Views\Eventoes\Delete.cshtml" />
-    <Content Include="Views\Eventoes\Details.cshtml" />
-    <Content Include="Views\Eventoes\Edit.cshtml" />
     <Content Include="Views\Eventoes\Index.cshtml" />
     <Content Include="Views\HistEventoes\Create.cshtml" />
     <Content Include="Views\HistEventoes\Delete.cshtml" />

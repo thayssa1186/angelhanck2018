@@ -14,8 +14,8 @@ namespace MatchEvents.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int id { get; set; }
 
-        [Key]
-        [Column(Order = 1)]
+       
+        
         [StringLength(255)]
         public string Nome { get; set; }
 

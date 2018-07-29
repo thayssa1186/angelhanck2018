@@ -8,6 +8,7 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using MatchEvents.Models;
+using MatchEvents.ViewModel;
 
 namespace MatchEvents.Controllers
 {
@@ -18,7 +19,27 @@ namespace MatchEvents.Controllers
         // GET: HistMatches
         public async Task<ActionResult> Index()
         {
-            return View(await db.HistMatches.ToListAsync());
+            var user = (Usuario)Session["User"];
+
+            var idademin = user.Idade - 5;
+            var idademax = user.Idade + 5;
+
+            var usersMatch = db.Usuarios.Where(x => x.Bairro.Contains(user.Bairro) && x.Idade >= idademin && x.Idade <= idademax && x.Cidade.Contains(user.Cidade) && x.Sexo.Equals(user.Sexo) && x.id != user.id).ToList();
+
+            List<MatchViewsModel> matchViewsModelList = new List<MatchViewsModel>();
+
+            foreach (var item in usersMatch)
+            {
+                MatchViewsModel match = new MatchViewsModel();
+                match.id = item.id;
+                match.nome = item.Nome;
+                match.email = item.Email;
+                match.telefone = "https://api.whatsapp.com/send?phone=55"+item.Telefone;
+
+                matchViewsModelList.Add(match);
+            }
+
+            return View(matchViewsModelList);
         }
 
         // GET: HistMatches/Details/5

@@ -1,27 +1,29 @@
-﻿@model IEnumerable<MatchEvents.Models.HistMatch>
+﻿@model IEnumerable<MatchEvents.ViewModel.MatchViewsModel>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Match de Eventos";
 }
 
-<h2>Index</h2>
+<h2>Match</h2>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
+
 <table class="table">
     <tr>
-        <th></th>
+        <th>Nome</th>
+        <th>Contato</th>
     </tr>
 
 @foreach (var item in Model) {
+    
     <tr>
+        <td>@item.nome</td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            <a href="@item.telefone">Conversar agora</a>
+           
         </td>
     </tr>
 }
 
 </table>
+
+<a href="https://www.eventbrite.com.br/e/aceleramulher-o-que-e-dificil-para-voce-tickets-48189475017?aff=ebdssbdestsearch">Comprar agora</a>

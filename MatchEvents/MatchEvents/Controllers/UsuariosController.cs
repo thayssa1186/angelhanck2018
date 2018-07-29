@@ -27,13 +27,13 @@ namespace MatchEvents.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Registrar([Bind(Include = "id,Nome,Telefone,Sexo,Idade,Senha,DataCriacao")] Usuario usuario)
+        public async Task<ActionResult> Registrar([Bind(Include = "id,Nome,Email,Telefone,Sexo,Idade,Bairro,Cidade,Senha,DataCriacao")] Usuario usuario)
         {
             if (ModelState.IsValid)
             {
                 db.Usuarios.Add(usuario);
                 await db.SaveChangesAsync();
-                return RedirectToAction("Index");
+                return RedirectToAction("Login", "Usuarios");
             }
 
             return View(usuario);
@@ -51,6 +51,8 @@ namespace MatchEvents.Controllers
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Login([Bind(Include = "Email,Senha")] LoginViewsModel login)
         {
+            var user = new Usuario();
+
             if (ModelState.IsValid)
             {
                 if (login == null)
@@ -59,7 +61,7 @@ namespace MatchEvents.Controllers
                 }
                 else
                 {
-                    var user = await db.Usuarios.FirstOrDefaultAsync(l => l.Email == login.email && l.Senha == login.senha);
+                    user = await db.Usuarios.FirstOrDefaultAsync(l => l.Email == login.email && l.Senha == login.senha);
 
                     if (user == null)
                     {
@@ -67,7 +69,7 @@ namespace MatchEvents.Controllers
                     }
                 }
 
-               
+                Session["User"] = user;
                 return RedirectToAction("Index","Eventoes");
             }
 
