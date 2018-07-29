@@ -28,11 +28,23 @@ namespace MatchEvents.Models
                 .IsUnicode(false);
 
             modelBuilder.Entity<Usuario>()
+                .Property(e => e.Email)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<Usuario>()
                 .Property(e => e.Telefone)
                 .IsUnicode(false);
 
             modelBuilder.Entity<Usuario>()
                 .Property(e => e.Sexo)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<Usuario>()
+                .Property(e => e.Bairro)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<Usuario>()
+                .Property(e => e.Cidade)
                 .IsUnicode(false);
 
             modelBuilder.Entity<Usuario>()
