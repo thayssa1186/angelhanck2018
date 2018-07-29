@@ -93,3 +93,73 @@ a.btn-initial {
     text-align: center;
     box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.2);
 }
+
+/*REGISTER PAGE*/
+/*form*/
+div.form-horizontal {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+.form-container {
+    box-shadow: 2px 4px 20px 0 rgba(0,0,15,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: calc(180px + 30vw);
+    padding: 2rem;
+}
+
+.btn-comecar {
+    color: white;
+    height: 56px;
+    width: 100%;
+    border-radius: 8px;
+    background-color: #7C4DFF;
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.2);
+}
+.btn-comecar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+
+label.form-group {
+    text-align: right;
+
+}
+
+.form-control {
+    width: 100%;
+}
+
+input.form-control {
+    padding: 0;
+    margin-left: 1.5rem;
+}
+
+div.col-md-10 {
+    width: 100%;
+    padding: 0;
+}
+
+select#Sexo {
+    margin: 1.5rem;
+}
+
+input#Senha {
+    margin: 1.5rem;
+    width: 100%;
+}
+
