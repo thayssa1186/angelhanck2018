@@ -22,3 +22,74 @@ select,
 textarea {
     max-width: 280px;
 }
+
+/*LAYOUT*/
+#my-nav {
+    background-color: #7C4DFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img.em-logo {
+    width: calc(120px + 10vh);
+}
+
+
+
+/*INITIAL PAGE*/
+.initial-page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.initial-page {
+    margin: 3vh 0;
+    position: relative;
+}
+
+.initial-page img {
+    width: 100%;
+}
+
+
+.btn-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    position: absolute;
+    bottom: 53px;
+    right: 10px;
+}
+
+/*button to go to app*/
+a.btn-initial {
+    color: white;
+    height: 56px;
+    width: 56px;
+    border-radius: 28px;
+    background-color: #7C4DFF;
+    background-image: url("./images/bnt-icon.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.2);
+}
+
+/*button tag*/
+.tag-initial {
+    background-color: white;
+    border-radius: 15px;
+    margin: 0;
+    padding: 0;
+    height: 22px;
+    width: 140px;
+    color: #7C4DFF;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 22px;
+    text-align: center;
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.2);
+}
