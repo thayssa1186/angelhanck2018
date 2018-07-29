@@ -171,3 +171,8 @@ input#Senha {
     justify-content: center;
     margin-top: 2vh;
 }
+
+
+.btn-comprar {
+    padding: 1rem;
+}
