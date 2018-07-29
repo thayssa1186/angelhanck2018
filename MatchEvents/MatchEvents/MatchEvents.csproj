@@ -210,11 +210,6 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Usuarios\Create.cshtml" />
-    <Content Include="Views\Usuarios\Delete.cshtml" />
-    <Content Include="Views\Usuarios\Details.cshtml" />
-    <Content Include="Views\Usuarios\Edit.cshtml" />
-    <Content Include="Views\Usuarios\Index.cshtml" />
     <Content Include="Views\Eventoes\Create.cshtml" />
     <Content Include="Views\Eventoes\Delete.cshtml" />
     <Content Include="Views\Eventoes\Details.cshtml" />
@@ -230,6 +225,7 @@
     <Content Include="Views\HistMatches\Details.cshtml" />
     <Content Include="Views\HistMatches\Edit.cshtml" />
     <Content Include="Views\HistMatches\Index.cshtml" />
+    <Content Include="Views\Usuarios\Registrar.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

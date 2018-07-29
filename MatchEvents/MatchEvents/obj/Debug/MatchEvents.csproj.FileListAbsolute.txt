@@ -94,3 +94,4 @@ C:\Users\t.bueno.sanches\source\repos\angelhanck2018\MatchEvents\MatchEvents\obj
 C:\Users\t.bueno.sanches\source\repos\angelhanck2018\MatchEvents\MatchEvents\obj\Debug\MatchEvents.csproj.CopyComplete
 C:\Users\t.bueno.sanches\source\repos\angelhanck2018\MatchEvents\MatchEvents\obj\Debug\MatchEvents.dll
 C:\Users\t.bueno.sanches\source\repos\angelhanck2018\MatchEvents\MatchEvents\obj\Debug\MatchEvents.pdb
+C:\Users\t.bueno.sanches\source\repos\angelhanck2018\MatchEvents\MatchEvents\obj\Debug\MatchEvents.csprojAssemblyReference.cache

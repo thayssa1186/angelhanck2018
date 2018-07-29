@@ -11,7 +11,7 @@ namespace MatchEvents.Models
     {
         [Key]
         [Column(Order = 0)]
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int id { get; set; }
 
         [Key]
@@ -22,6 +22,7 @@ namespace MatchEvents.Models
         [Key]
         [Column(Order = 2)]
         [StringLength(11)]
+        [RegularExpression(@"^[1-9]{2}[2-9][0-9]{7,8}$", ErrorMessage = "Digite o telefone celular com o DDD")]
         public string Telefone { get; set; }
 
         [Key]
@@ -32,6 +33,7 @@ namespace MatchEvents.Models
         [Key]
         [Column(Order = 4)]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        [RegularExpression(@"^[0-9]{2}$", ErrorMessage = "Digite a idade corretamente")]
         public int Idade { get; set; }
 
         [Key]
@@ -39,8 +41,7 @@ namespace MatchEvents.Models
         [StringLength(8)]
         public string Senha { get; set; }
 
-        [Key]
-        [Column(Order = 6)]
-        public DateTime DataCriacao { get; set; }
+        [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
+        public DateTime? DataCriacao { get; set; }
     }
 }
