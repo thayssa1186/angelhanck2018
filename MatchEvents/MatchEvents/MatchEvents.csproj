@@ -170,6 +170,7 @@
     <Compile Include="Models\MatchEventsDB.cs" />
     <Compile Include="Models\Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModel\LoginViewsModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
@@ -226,6 +227,7 @@
     <Content Include="Views\HistMatches\Edit.cshtml" />
     <Content Include="Views\HistMatches\Index.cshtml" />
     <Content Include="Views\Usuarios\Registrar.cshtml" />
+    <Content Include="Views\Usuarios\Login.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
